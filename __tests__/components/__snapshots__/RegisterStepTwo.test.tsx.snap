@@ -1,0 +1,400 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RegisterStepTwo matches the snapshot 1`] = `
+<View
+  style={
+    {
+      "flex": 1,
+      "marginTop": 100,
+    }
+  }
+>
+  <Text
+    style={
+      [
+        {
+          "color": "#11181C",
+        },
+        undefined,
+        undefined,
+        undefined,
+        {
+          "fontSize": 20,
+          "fontWeight": "bold",
+        },
+        undefined,
+        {
+          "marginBottom": 20,
+        },
+      ]
+    }
+  >
+    Étape 2 : Famille
+  </Text>
+  <View
+    accessibilityRole="radiogroup"
+    style={
+      [
+        {
+          "alignItems": "center",
+        },
+        {
+          "flexDirection": "column",
+        },
+        {
+          "alignItems": "flex-start",
+          "marginBottom": 20,
+        },
+      ]
+    }
+  >
+    <View
+      accessibilityLabel="Rejoindre ma famille grâce au code famille"
+      accessibilityRole="radio"
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": false,
+          "disabled": false,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        [
+          {
+            "alignItems": "center",
+            "marginHorizontal": 10,
+            "marginVertical": 5,
+          },
+          {
+            "flexDirection": "row",
+          },
+          {
+            "opacity": 1,
+          },
+          undefined,
+        ]
+      }
+    >
+      <View
+        style={
+          [
+            {
+              "alignItems": "center",
+              "justifyContent": "center",
+            },
+            {
+              "borderColor": "#151718",
+              "borderRadius": 12,
+              "borderWidth": 2,
+              "height": 24,
+              "width": 24,
+            },
+          ]
+        }
+      />
+      <Text
+        style={
+          [
+            {
+              "marginLeft": 10,
+            },
+            {
+              "color": "#151718",
+            },
+          ]
+        }
+      >
+        Rejoindre ma famille grâce au code famille
+      </Text>
+    </View>
+    <View
+      accessibilityLabel="Créer une nouvelle famille"
+      accessibilityRole="radio"
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": false,
+          "disabled": false,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        [
+          {
+            "alignItems": "center",
+            "marginHorizontal": 10,
+            "marginVertical": 5,
+          },
+          {
+            "flexDirection": "row",
+          },
+          {
+            "opacity": 1,
+          },
+          undefined,
+        ]
+      }
+    >
+      <View
+        style={
+          [
+            {
+              "alignItems": "center",
+              "justifyContent": "center",
+            },
+            {
+              "borderColor": "#151718",
+              "borderRadius": 12,
+              "borderWidth": 2,
+              "height": 24,
+              "width": 24,
+            },
+          ]
+        }
+      />
+      <Text
+        style={
+          [
+            {
+              "marginLeft": 10,
+            },
+            {
+              "color": "#151718",
+            },
+          ]
+        }
+      >
+        Créer une nouvelle famille
+      </Text>
+    </View>
+  </View>
+  <View
+    style={
+      {
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+      }
+    }
+  >
+    <View
+      accessibilityLabel="Page précédente"
+      accessibilityRole="button"
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "opacity": 1,
+        }
+      }
+    >
+      <View
+        style={
+          [
+            {
+              "backgroundColor": "#fffaf0",
+            },
+            [
+              {
+                "borderRadius": 8,
+              },
+              {
+                "paddingHorizontal": 20,
+                "paddingVertical": 10,
+              },
+              {
+                "backgroundColor": "#151718",
+              },
+            ],
+          ]
+        }
+        testID="button-inner-container"
+      >
+        <Text
+          style={
+            [
+              {
+                "color": "#11181C",
+              },
+              {
+                "fontSize": 16,
+                "lineHeight": 24,
+              },
+              undefined,
+              undefined,
+              undefined,
+              undefined,
+              [
+                {
+                  "fontWeight": "bold",
+                  "textAlign": "center",
+                },
+                {
+                  "color": "#f0e3c9",
+                },
+              ],
+            ]
+          }
+        >
+          Précédent
+        </Text>
+      </View>
+    </View>
+    <View
+      accessibilityLabel="Page suivante"
+      accessibilityRole="button"
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "opacity": 1,
+        }
+      }
+    >
+      <View
+        style={
+          [
+            {
+              "backgroundColor": "#fffaf0",
+            },
+            [
+              {
+                "borderRadius": 8,
+              },
+              {
+                "paddingHorizontal": 20,
+                "paddingVertical": 10,
+              },
+              {
+                "backgroundColor": "#151718",
+              },
+            ],
+          ]
+        }
+        testID="button-inner-container"
+      >
+        <Text
+          style={
+            [
+              {
+                "color": "#11181C",
+              },
+              {
+                "fontSize": 16,
+                "lineHeight": 24,
+              },
+              undefined,
+              undefined,
+              undefined,
+              undefined,
+              [
+                {
+                  "fontWeight": "bold",
+                  "textAlign": "center",
+                },
+                {
+                  "color": "#f0e3c9",
+                },
+              ],
+            ]
+          }
+        >
+          Suivant
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;
