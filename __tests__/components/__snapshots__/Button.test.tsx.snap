@@ -1,0 +1,92 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button Component matches the snapshot 1`] = `
+<View
+  accessibilityLabel="And see the magic!"
+  accessibilityRole="button"
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "opacity": 1,
+    }
+  }
+>
+  <View
+    style={
+      [
+        {
+          "backgroundColor": "#fffaf0",
+        },
+        [
+          {
+            "borderRadius": 8,
+          },
+          {
+            "paddingHorizontal": 20,
+            "paddingVertical": 10,
+          },
+          {
+            "backgroundColor": "#151718",
+          },
+        ],
+      ]
+    }
+    testID="button-inner-container"
+  >
+    <Text
+      style={
+        [
+          {
+            "color": "#11181C",
+          },
+          {
+            "fontSize": 16,
+            "lineHeight": 24,
+          },
+          undefined,
+          undefined,
+          undefined,
+          undefined,
+          [
+            {
+              "fontWeight": "bold",
+              "textAlign": "center",
+            },
+            {
+              "color": "#f0e3c9",
+            },
+          ],
+        ]
+      }
+    >
+      Click me
+    </Text>
+  </View>
+</View>
+`;

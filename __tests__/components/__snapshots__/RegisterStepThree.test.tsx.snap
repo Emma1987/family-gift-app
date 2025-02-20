@@ -1,0 +1,225 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RegisterStepThree matches the snapshot 1`] = `
+<View
+  style={
+    {
+      "flex": 1,
+    }
+  }
+>
+  <Text
+    style={
+      [
+        {
+          "color": "#11181C",
+        },
+        undefined,
+        undefined,
+        undefined,
+        {
+          "fontSize": 20,
+          "fontWeight": "bold",
+        },
+        undefined,
+        {
+          "marginBottom": 20,
+        },
+      ]
+    }
+  >
+    Étape 3 : Avatar
+  </Text>
+  <View>
+    <Text>
+      Final avatar
+    </Text>
+  </View>
+  <View
+    style={
+      {
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "marginTop": 30,
+      }
+    }
+  >
+    <View
+      accessibilityLabel="Page précédente"
+      accessibilityRole="button"
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "opacity": 1,
+        }
+      }
+    >
+      <View
+        style={
+          [
+            {
+              "backgroundColor": "#fffaf0",
+            },
+            [
+              {
+                "borderRadius": 8,
+              },
+              {
+                "paddingHorizontal": 20,
+                "paddingVertical": 10,
+              },
+              {
+                "backgroundColor": "#151718",
+              },
+            ],
+          ]
+        }
+        testID="button-inner-container"
+      >
+        <Text
+          style={
+            [
+              {
+                "color": "#11181C",
+              },
+              {
+                "fontSize": 16,
+                "lineHeight": 24,
+              },
+              undefined,
+              undefined,
+              undefined,
+              undefined,
+              [
+                {
+                  "fontWeight": "bold",
+                  "textAlign": "center",
+                },
+                {
+                  "color": "#f0e3c9",
+                },
+              ],
+            ]
+          }
+        >
+          Précédent
+        </Text>
+      </View>
+    </View>
+    <View
+      accessibilityLabel="Créer mon compte"
+      accessibilityRole="button"
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "opacity": 1,
+        }
+      }
+    >
+      <View
+        style={
+          [
+            {
+              "backgroundColor": "#fffaf0",
+            },
+            [
+              {
+                "borderRadius": 8,
+              },
+              {
+                "paddingHorizontal": 20,
+                "paddingVertical": 10,
+              },
+              {
+                "backgroundColor": "#151718",
+              },
+            ],
+          ]
+        }
+        testID="button-inner-container"
+      >
+        <Text
+          style={
+            [
+              {
+                "color": "#11181C",
+              },
+              {
+                "fontSize": 16,
+                "lineHeight": 24,
+              },
+              undefined,
+              undefined,
+              undefined,
+              undefined,
+              [
+                {
+                  "fontWeight": "bold",
+                  "textAlign": "center",
+                },
+                {
+                  "color": "#f0e3c9",
+                },
+              ],
+            ]
+          }
+        >
+          Créer
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;

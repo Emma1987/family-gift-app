@@ -1,0 +1,265 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RegisterStepOne matches the snapshot 1`] = `
+<View
+  style={
+    {
+      "flex": 1,
+      "marginTop": "25%",
+    }
+  }
+>
+  <Text
+    style={
+      [
+        {
+          "color": "#11181C",
+        },
+        undefined,
+        undefined,
+        undefined,
+        {
+          "fontSize": 20,
+          "fontWeight": "bold",
+        },
+        undefined,
+        {
+          "marginBottom": 20,
+        },
+      ]
+    }
+  >
+    Étape 1 : Informations
+  </Text>
+  <View>
+    <TextInput
+      accessibilityLabel="Nom"
+      autoCapitalize="none"
+      autoCorrect={false}
+      keyboardType="default"
+      onBlur={[Function]}
+      onChangeText={[Function]}
+      placeholder="Nom"
+      style={
+        [
+          {
+            "borderBottomWidth": 1,
+            "fontWeight": 500,
+            "height": 45,
+            "marginBottom": 20,
+          },
+          {
+            "borderColor": "#151718",
+            "color": "#151718",
+          },
+          undefined,
+        ]
+      }
+    />
+  </View>
+  <View>
+    <TextInput
+      accessibilityLabel="Adresse email"
+      autoCapitalize="none"
+      autoCorrect={false}
+      keyboardType="email-address"
+      onBlur={[Function]}
+      onChangeText={[Function]}
+      placeholder="Adresse email"
+      style={
+        [
+          {
+            "borderBottomWidth": 1,
+            "fontWeight": 500,
+            "height": 45,
+            "marginBottom": 20,
+          },
+          {
+            "borderColor": "#151718",
+            "color": "#151718",
+          },
+          undefined,
+        ]
+      }
+    />
+  </View>
+  <View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "flexDirection": "row",
+            "marginBottom": 20,
+          },
+          {
+            "borderColor": "#151718",
+          },
+          undefined,
+        ]
+      }
+    >
+      <TextInput
+        accessibilityLabel="Mot de passe"
+        autoCapitalize="none"
+        autoComplete="password-new"
+        autoCorrect={false}
+        onBlur={[Function]}
+        onChangeText={[Function]}
+        placeholder="Mot de passe"
+        secureTextEntry={true}
+        style={
+          [
+            {
+              "flex": 1,
+              "fontWeight": "500",
+              "height": 45,
+            },
+            {
+              "color": "#151718",
+            },
+          ]
+        }
+      />
+      <View
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": undefined,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "opacity": 1,
+            "padding": 10,
+          }
+        }
+      >
+        <Text
+          accessibilityLabel="Changer la visibilité du mot de passe"
+        >
+          eye-off-outline
+        </Text>
+      </View>
+    </View>
+  </View>
+  <View
+    style={
+      {
+        "alignItems": "flex-end",
+      }
+    }
+  >
+    <View
+      accessibilityLabel="Page suivante"
+      accessibilityRole="button"
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "opacity": 1,
+        }
+      }
+    >
+      <View
+        style={
+          [
+            {
+              "backgroundColor": "#fffaf0",
+            },
+            [
+              {
+                "borderRadius": 8,
+              },
+              {
+                "paddingHorizontal": 20,
+                "paddingVertical": 10,
+              },
+              {
+                "backgroundColor": "#151718",
+              },
+            ],
+          ]
+        }
+        testID="button-inner-container"
+      >
+        <Text
+          style={
+            [
+              {
+                "color": "#11181C",
+              },
+              {
+                "fontSize": 16,
+                "lineHeight": 24,
+              },
+              undefined,
+              undefined,
+              undefined,
+              undefined,
+              [
+                {
+                  "fontWeight": "bold",
+                  "textAlign": "center",
+                },
+                {
+                  "color": "#f0e3c9",
+                },
+              ],
+            ]
+          }
+        >
+          Suivant
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;
