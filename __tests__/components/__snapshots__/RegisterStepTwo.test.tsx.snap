@@ -23,6 +23,7 @@ exports[`RegisterStepTwo matches the snapshot 1`] = `
           "fontWeight": "bold",
         },
         undefined,
+        undefined,
         {
           "marginBottom": 20,
         },
@@ -54,7 +55,7 @@ exports[`RegisterStepTwo matches the snapshot 1`] = `
       accessibilityState={
         {
           "busy": undefined,
-          "checked": false,
+          "checked": true,
           "disabled": false,
           "expanded": undefined,
           "selected": undefined,
@@ -113,7 +114,18 @@ exports[`RegisterStepTwo matches the snapshot 1`] = `
             },
           ]
         }
-      />
+      >
+        <View
+          style={
+            {
+              "backgroundColor": "#151718",
+              "borderRadius": 12,
+              "height": 12,
+              "width": 12,
+            }
+          }
+        />
+      </View>
       <Text
         style={
           [
@@ -211,6 +223,32 @@ exports[`RegisterStepTwo matches the snapshot 1`] = `
       </Text>
     </View>
   </View>
+  <View>
+    <TextInput
+      accessibilityLabel="Code de la famille"
+      autoCapitalize="none"
+      autoCorrect={false}
+      keyboardType="default"
+      onBlur={[Function]}
+      onChangeText={[Function]}
+      placeholder="Code famille"
+      style={
+        [
+          {
+            "borderBottomWidth": 1,
+            "fontWeight": 500,
+            "height": 45,
+            "marginBottom": 20,
+          },
+          {
+            "borderColor": "#151718",
+            "color": "#151718",
+          },
+          undefined,
+        ]
+      }
+    />
+  </View>
   <View
     style={
       {
@@ -272,6 +310,7 @@ exports[`RegisterStepTwo matches the snapshot 1`] = `
               {
                 "backgroundColor": "#151718",
               },
+              {},
             ],
           ]
         }
@@ -287,6 +326,7 @@ exports[`RegisterStepTwo matches the snapshot 1`] = `
                 "fontSize": 16,
                 "lineHeight": 24,
               },
+              undefined,
               undefined,
               undefined,
               undefined,
@@ -360,6 +400,7 @@ exports[`RegisterStepTwo matches the snapshot 1`] = `
               {
                 "backgroundColor": "#151718",
               },
+              {},
             ],
           ]
         }
@@ -375,6 +416,7 @@ exports[`RegisterStepTwo matches the snapshot 1`] = `
                 "fontSize": 16,
                 "lineHeight": 24,
               },
+              undefined,
               undefined,
               undefined,
               undefined,
