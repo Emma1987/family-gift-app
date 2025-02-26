@@ -23,7 +23,8 @@ export function PasswordInput({
     rules = {},
     autocomplete = 'password',
 }: PasswordInputProps) {
-    const inputStyle = useThemeColor({}, 'input');
+    const inputBorderColor = useThemeColor({}, 'inputBorderColor');
+    const inputColor = useThemeColor({}, 'inputColor');
     const { trigger } = useFormContext();
 
     const [isValueDisplayed, setIsValueDisplayed] = useState<boolean>(false);
@@ -39,12 +40,12 @@ export function PasswordInput({
                         <View
                             style={[
                                 styles.inputContainer,
-                                { borderColor: inputStyle.borderColor },
+                                { borderColor: inputBorderColor },
                                 error && styles.inputError,
                             ]}
                         >
                             <RNTextInput
-                                style={[styles.input, { color: inputStyle.color }]}
+                                style={[styles.input, { color: inputColor }]}
                                 onChangeText={onChange}
                                 onBlur={() => {
                                     onBlur();
@@ -62,7 +63,7 @@ export function PasswordInput({
                                 <Ionicons
                                     name={isValueDisplayed ? 'eye-outline' : 'eye-off-outline'}
                                     size={25}
-                                    color={inputStyle.color}
+                                    color={inputColor}
                                     accessibilityLabel="Changer la visibilité du mot de passe"
                                     accessibilityRole="button"
                                     importantForAccessibility="no-hide-descendants"

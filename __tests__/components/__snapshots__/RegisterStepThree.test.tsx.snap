@@ -22,6 +22,7 @@ exports[`RegisterStepThree matches the snapshot 1`] = `
           "fontWeight": "bold",
         },
         undefined,
+        undefined,
         {
           "marginBottom": 20,
         },
@@ -97,6 +98,7 @@ exports[`RegisterStepThree matches the snapshot 1`] = `
               {
                 "backgroundColor": "#151718",
               },
+              {},
             ],
           ]
         }
@@ -112,6 +114,7 @@ exports[`RegisterStepThree matches the snapshot 1`] = `
                 "fontSize": 16,
                 "lineHeight": 24,
               },
+              undefined,
               undefined,
               undefined,
               undefined,
@@ -185,6 +188,7 @@ exports[`RegisterStepThree matches the snapshot 1`] = `
               {
                 "backgroundColor": "#151718",
               },
+              {},
             ],
           ]
         }
@@ -200,6 +204,7 @@ exports[`RegisterStepThree matches the snapshot 1`] = `
                 "fontSize": 16,
                 "lineHeight": 24,
               },
+              undefined,
               undefined,
               undefined,
               undefined,

@@ -1,29 +1,31 @@
-import { StyleSheet, TouchableOpacity } from 'react-native';
+import { StyleSheet, TouchableOpacity, ViewProps } from 'react-native';
 
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
 import { useThemeColor } from '@/hooks/useThemeColor';
 
-type ButtonProps = {
+type ButtonProps = ViewProps & {
     text: string;
     accessibilityLabel: string;
     size?: 'small' | 'normal';
     onButtonPress: () => void;
 };
 
-export function Button({ text, accessibilityLabel, size = 'normal', onButtonPress }: ButtonProps) {
-    const buttonThemeStyle = useThemeColor({}, 'button');
+export function Button({ style = {}, text, accessibilityLabel, size = 'normal', onButtonPress }: ButtonProps) {
+    const buttonBackgroundColor = useThemeColor({}, 'buttonBackgroundColor');
+    const buttonTextColor = useThemeColor({}, 'buttonTextColor');
 
     const buttonStyle = [
         styles.button,
         size === 'normal' ? styles.normalButton : styles.smallButton,
-        { backgroundColor: buttonThemeStyle.background },
+        { backgroundColor: buttonBackgroundColor },
+        style,
     ];
 
     return (
         <TouchableOpacity onPress={onButtonPress} accessibilityLabel={accessibilityLabel} accessibilityRole="button">
             <ThemedView style={buttonStyle} testID="button-inner-container">
-                <ThemedText style={[styles.text, { color: buttonThemeStyle.text }]}>{text}</ThemedText>
+                <ThemedText style={[styles.text, { color: buttonTextColor }]}>{text}</ThemedText>
             </ThemedView>
         </TouchableOpacity>
     );

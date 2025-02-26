@@ -21,7 +21,8 @@ export function TextInput({
     rules = {},
     keyboardType = 'default',
 }: TextInputProps) {
-    const inputStyle = useThemeColor({}, 'input');
+    const inputBorderColor = useThemeColor({}, 'inputBorderColor');
+    const inputColor = useThemeColor({}, 'inputColor');
     const { trigger } = useFormContext();
 
     return (
@@ -34,7 +35,7 @@ export function TextInput({
                     <RNTextInput
                         style={[
                             styles.input,
-                            { borderColor: inputStyle.borderColor, color: inputStyle.color },
+                            { borderColor: inputBorderColor, color: inputColor },
                             error && styles.inputError,
                         ]}
                         onChangeText={onChange}
@@ -47,14 +48,13 @@ export function TextInput({
                         accessibilityLabel={accessibilityLabel}
                         keyboardType={keyboardType}
                         autoCorrect={false}
-                        autoCapitalize='none'
+                        autoCapitalize="none"
                     />
                     {error?.message && <ThemedText style={styles.errorText}>{error.message}</ThemedText>}
                 </View>
             )}
         />
-        
-    )
+    );
 }
 
 const styles = StyleSheet.create({

@@ -7,11 +7,7 @@ import { Button } from '@/components/ui/Button';
 import { TextInput } from '@/components/ui/TextInput';
 import { ThemedText } from '@/components/ThemedText';
 import { useThemeColor } from '@/hooks/useThemeColor';
-
-enum FamilyChoiceEnum {
-    JOIN = 'join-family',
-    CREATE = 'create-family',
-}
+import { FamilyChoiceEnum } from '@/types/types';
 
 type RegisterStepTwoProps = {
     nextStep: () => void;
@@ -19,10 +15,11 @@ type RegisterStepTwoProps = {
 };
 
 export function RegisterStepTwo({ nextStep, prevStep }: RegisterStepTwoProps) {
-    const inputStyle = useThemeColor({}, 'input');
+    const inputBorderColor: string = useThemeColor({}, 'inputBorderColor');
+    const inputColor: string = useThemeColor({}, 'inputBorderColor');
     const { control, setValue, watch, trigger } = useFormContext();
 
-    const selectedChoice = watch('selectedChoice', null);
+    const selectedChoice = watch('selectedChoice', FamilyChoiceEnum.JOIN);
 
     const familyChoices = useMemo(
         () => [
@@ -30,20 +27,20 @@ export function RegisterStepTwo({ nextStep, prevStep }: RegisterStepTwoProps) {
                 id: FamilyChoiceEnum.JOIN,
                 label: 'Rejoindre ma famille grâce au code famille',
                 value: FamilyChoiceEnum.JOIN,
-                borderColor: inputStyle.borderColor,
-                color: inputStyle.color,
-                labelStyle: { color: inputStyle.color },
+                borderColor: inputBorderColor,
+                color: inputColor,
+                labelStyle: { color: inputColor },
             },
             {
                 id: FamilyChoiceEnum.CREATE,
                 label: 'Créer une nouvelle famille',
                 value: FamilyChoiceEnum.CREATE,
-                borderColor: inputStyle.borderColor,
-                color: inputStyle.color,
-                labelStyle: { color: inputStyle.color },
+                borderColor: inputBorderColor,
+                color: inputColor,
+                labelStyle: { color: inputColor },
             },
         ],
-        [inputStyle],
+        [inputBorderColor, inputColor],
     );
 
     const handleNextStep = async () => {

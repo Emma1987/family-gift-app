@@ -23,6 +23,7 @@ exports[`RegisterStepOne matches the snapshot 1`] = `
           "fontWeight": "bold",
         },
         undefined,
+        undefined,
         {
           "marginBottom": 20,
         },
@@ -225,6 +226,7 @@ exports[`RegisterStepOne matches the snapshot 1`] = `
               {
                 "backgroundColor": "#151718",
               },
+              {},
             ],
           ]
         }
@@ -240,6 +242,7 @@ exports[`RegisterStepOne matches the snapshot 1`] = `
                 "fontSize": 16,
                 "lineHeight": 24,
               },
+              undefined,
               undefined,
               undefined,
               undefined,
