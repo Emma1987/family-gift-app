@@ -1,4 +1,4 @@
-import { FamilyChoiceEnum, RegisterFormData, RegisterInput } from '@/types/types';
+import { FamilyChoiceEnum, RegisterFormData, RegisterInput } from '@/types/appTypes';
 
 export const getRegisterInput = (formData: RegisterFormData): RegisterInput => {
     return {

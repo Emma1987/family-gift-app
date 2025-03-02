@@ -21,7 +21,7 @@ import { ThemedView } from '@/components/ThemedView';
 import { useAuth } from '@/context/AuthContext';
 import { register as registerService } from '@/graphql/graphqlService';
 import { getRegisterInput } from '@/helpers/regiserHelper';
-import { RegisterFormData, FamilyChoiceEnum, ValidationViolation } from '@/types/types';
+import { RegisterFormData, FamilyChoiceEnum, ValidationViolation } from '@/types/appTypes';
 
 export default function RegisterScreen() {
     const router = useRouter();

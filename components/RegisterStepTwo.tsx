@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/Button';
 import { TextInput } from '@/components/ui/TextInput';
 import { ThemedText } from '@/components/ThemedText';
 import { useThemeColor } from '@/hooks/useThemeColor';
-import { FamilyChoiceEnum } from '@/types/types';
+import { FamilyChoiceEnum } from '@/types/appTypes';
 
 type RegisterStepTwoProps = {
     nextStep: () => void;

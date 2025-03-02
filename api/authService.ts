@@ -1,6 +1,6 @@
 import axios from 'axios';
 import * as SecureStore from 'expo-secure-store';
-import { AuthResponse, LoginInput } from '@/types/types';
+import { AuthResponse, LoginInput } from '@/types/appTypes';
 
 const API_URL = process.env.EXPO_PUBLIC_API_URL;
 const LOGIN_PATH = '/login';
@@ -28,16 +28,16 @@ export const login = async (loginInput: LoginInput) => {
 // Refresh token request (Axios)
 export const refreshToken = async (): Promise<string | null> => {
     try {
-        const refreshToken = await SecureStore.getItemAsync('authToken');
+        const refreshToken = await SecureStore.getItemAsync('refreshToken');
 
         if (!refreshToken) {
             console.warn('No refresh token found');
             return null;
         }
 
-        const { data } = await axios.post<AuthResponse>(
+        const { data } = await api.post<AuthResponse>(
             `${REFRESH_TOKEN_PATH}`,
-            new URLSearchParams({ refresh_token: refreshToken }).toString(),
+            new URLSearchParams({ refresh_token: refreshToken }),
             { headers: { 'Content-Type': 'application/x-www-form-urlencoded' } },
         );
 

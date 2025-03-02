@@ -8,7 +8,7 @@ import { TextInput } from '@/components/ui/TextInput';
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
 import { useAuth } from '@/context/AuthContext';
-import { LoginInput } from '@/types/types';
+import { LoginInput } from '@/types/appTypes';
 
 export default function LoginScreen() {
     const router = useRouter();

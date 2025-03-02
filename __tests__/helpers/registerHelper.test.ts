@@ -1,5 +1,5 @@
 import { getRegisterInput } from '@/helpers/regiserHelper';
-import { FamilyChoiceEnum, RegisterFormData, RegisterInput } from '@/types/types';
+import { FamilyChoiceEnum, RegisterFormData, RegisterInput } from '@/types/appTypes';
 
 describe('regiserHelper', () => {
     it('should map RegisterFormData to RegisterInput when joining a family', () => {

@@ -9,14 +9,15 @@ import {
     Operation,
     fromError,
     ApolloError,
+    ServerError,
 } from '@apollo/client';
 import { Observable } from '@apollo/client/utilities';
 import * as SecureStore from 'expo-secure-store';
 import { onError } from '@apollo/client/link/error';
 import { refreshToken } from '@/api/authService';
 
-const API_URL = process.env.EXPO_API_URL;
-const REGISTER_URL = process.env.EXPO_REGISTER_URL;
+const API_URL = process.env.EXPO_PUBLIC_ME_URL;
+const REGISTER_URL = process.env.EXPO_PUBLIC_REGISTER_URL;
 
 // Create an Apollo Link for attaching the Authorization header
 const authLink = new ApolloLink((operation: Operation, forward: NextLink) => {
@@ -50,25 +51,7 @@ const urlLink = new ApolloLink((operation: Operation, forward: NextLink) => {
 const errorLink = onError(({ graphQLErrors, networkError, operation, forward }) => {
     if (graphQLErrors) {
         for (let error of graphQLErrors) {
-            // If "unauthenticated" error
-            if (error.extensions?.code === 'UNAUTHENTICATED') {
-                return fromPromise(
-                    refreshToken().then((newToken) => {
-                        if (!newToken) throw new Error('Token refresh failed');
-
-                        operation.setContext(({ headers = {} }) => ({
-                            headers: {
-                                ...headers,
-                                Authorization: `Bearer ${newToken}`,
-                            },
-                        }));
-
-                        return forward(operation);
-                    }),
-                ).flatMap((observable) => observable);
-            }
-
-            // If "validation" error
+            // "validation" error
             if (error.extensions?.validation) {
                 const validationError = new ApolloError({
                     errorMessage: 'Validation failed',
@@ -86,7 +69,29 @@ const errorLink = onError(({ graphQLErrors, networkError, operation, forward }) 
     }
 
     if (networkError) {
-        console.error('Network error:', networkError);
+        // "unauthenticated" error
+        if (
+            (networkError as ServerError).response &&
+            (networkError as ServerError).response.status &&
+            (networkError as ServerError).response.status === 401
+        ) {
+            return fromPromise(
+                refreshToken().then((newToken) => {
+                    if (!newToken) throw new Error('Token refresh failed');
+
+                    operation.setContext(({ headers = {} }) => ({
+                        headers: {
+                            ...headers,
+                            Authorization: `Bearer ${newToken}`,
+                        },
+                    }));
+
+                    return forward(operation);
+                }),
+            ).flatMap((observable) => observable);
+        } else {
+            console.error('Network error:', networkError);
+        }
     }
 });
 

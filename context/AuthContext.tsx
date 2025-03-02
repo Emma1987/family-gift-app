@@ -3,7 +3,7 @@ import { useMutation } from '@tanstack/react-query';
 
 import { login as loginService, logout as logoutService } from '@/api/authService';
 import { checkAuthStatus } from '@/helpers/authHelper';
-import { AuthResponse, LoginInput } from '@/types/types';
+import { AuthResponse, LoginInput } from '@/types/appTypes';
 
 interface AuthContextType {
     isAuthenticated: boolean;

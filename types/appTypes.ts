@@ -1,4 +1,5 @@
 import { AvatarFullConfig } from '@zamplyy/react-native-nice-avatar';
+import { FamilyMember } from './apiTypes';
 
 export type FamilyMemberType = {
     id: string;
@@ -38,6 +39,13 @@ export type AuthResponse = {
 export type ValidationViolation = {
     field: string;
     messages: string[];
+};
+
+export type AvatarComponentProps = {
+    type: 'blank-space' | 'create' | 'avatar';
+    familyMember?: FamilyMember | null;
+    onPressCreateLabel?: string | null;
+    onPressCreate?: () => void | null;
 };
 
 export enum FamilyChoiceEnum {
