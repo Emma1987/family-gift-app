@@ -1,8 +1,21 @@
 import * as SecureStore from 'expo-secure-store';
 import apolloClient from '@/api/apolloClient';
-import { REGISTER_MUTATION } from '@/graphql/graphqlQueries';
-import { AuthResponse, RegisterInput } from '@/types/types';
+import { ME_QUERY, REGISTER_MUTATION } from '@/graphql/graphqlQueries';
+import { AuthResponse, RegisterInput } from '@/types/appTypes';
 import { ApolloError } from '@apollo/client';
+
+export const me = async () => {
+    try {
+        const { data } = await apolloClient.query({
+            query: ME_QUERY,
+        });
+
+        console.log(data.me);
+        return data.me;
+    } catch (error: any) {
+        console.error('Unexpected Me error:', error);
+    }
+};
 
 export const register = async (registerInput: RegisterInput): Promise<AuthResponse> => {
     try {
